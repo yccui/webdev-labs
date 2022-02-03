@@ -119,4 +119,23 @@ button {
 }
 
 .dyslexia-mode {
+  letter-spacing: 0.35ch;
+  word-spacing: 1.225ch; /* 3.5x letter-spacing */
+  font-variant-ligatures: none; /* explicitly disable ligatures */
+}
+
+.dyslexia-mode h1,
+h2 {
+  font-weight: bold;
+  color: black;
+}
+
+.dyslexia-mode .content {
+  line-height: 2;
+  max-width: 60%;
+  align-self: center;
+}
+
+.dyslexia-mode .content p {
+  margin-top: 3.5em;
 }

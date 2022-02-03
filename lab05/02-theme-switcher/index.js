@@ -7,23 +7,23 @@
 */
 
 const de_fault = (ev) => {
-   alert('make bigger!');
+   document.querySelector("body").className = "";
 };
 
 const desert = (ev) => {
-   alert('make smaller!');
+   document.querySelector("body").className = "desert";
 };
 
 const ocean = (ev) => {
-   alert('make smaller!');
+   document.querySelector("body").className = "ocean";
 };
 
 const high_contrast = (ev) => {
-   alert('make smaller!');
+   document.querySelector("body").className = "high-contrast";
 };
 
 
-document.querySelector("default").addEventListener('click', makeBigger);
-document.querySelector("desert").addEventListener('click', makeSmaller);
-document.querySelector("ocean").addEventListener('click', makeSmaller);
-document.querySelector("high-contrast").addEventListener('click', makeSmaller);
+document.querySelector("#default").addEventListener('click', de_fault);
+document.querySelector("#desert").addEventListener('click', desert);
+document.querySelector("#ocean").addEventListener('click', ocean);
+document.querySelector("#high-contrast").addEventListener('click', high_contrast);

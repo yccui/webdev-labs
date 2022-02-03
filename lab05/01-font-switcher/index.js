@@ -1,9 +1,15 @@
-const makeBigger = (ev) => {
-   alert('make bigger!');
+let currentSize = 1.4;
+
+const makeBigger = () => {
+   currentSize += 0.2;
+   document.querySelector(".content").style.fontSize = `${currentSize}em`;
+   document.querySelector("h1").style.fontSize = `${currentSize+0.4}em`;
 };
 
-const makeSmaller = (ev) => {
-   alert('make smaller!');
+const makeSmaller = () => {
+   currentSize -= 0.2;
+   document.querySelector(".content").style.fontSize = `${currentSize}em`;
+   document.querySelector("h1").style.fontSize = `${currentSize-0.4}em`;
 };
 
 
